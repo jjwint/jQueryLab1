@@ -11,31 +11,32 @@
 
 	<div id="container">
 		<div id="row1">
-			<div class="circles available"><span class="tableNum">1</span></div>
-			<div class="circles available"><span class="tableNum">2</span></div>
-			<div class="circles available"><span class="tableNum">3</span></div>
+			<div class="circles available"><span class="tableNum" id="table1">1</span></div>
+			<div class="circles available"><span class="tableNum" id="table2">2</span></div>
+			<div class="circles available"><span class="tableNum" id="table3">3</span></div>
 		</div>
 		<div id="row2">
-			<div class="circles available"><span class="tableNum">4</span></div>
-			<div class="circles available"><span class="tableNum">5</span></div>
-			<div class="circles available"><span class="tableNum">6</span></div>
+			<div class="circles available"><span class="tableNum" id="table4">4</span></div>
+			<div class="circles available"><span class="tableNum" id="table5">5</span></div>
+			<div class="circles available"><span class="tableNum" id="table6">6</span></div>
 		</div>
 		<div id="row3">
-			<div class="circles available"><span class="tableNum">7</span></div>
-			<div class="circles available"><span class="tableNum">8</span></div>
-			<div class="circles available"><span class="tableNum">9</span></div>
+			<div class="circles available"><span class="tableNum" id="table7">7</span></div>
+			<div class="circles available"><span class="tableNum" id="table8">8</span></div>
+			<div class="circles available"><span class="tableNum" id="table9">9</span></div>
 		</div>
 	</div>
 
-	<div id="hiddenForm">
+	<div id="hiddenForm" class="hidden">
 		<form>
+			<button id="quitButton">x</button>
 			<h1 id="newReservation">New Reservation</h1>
-			<h2 id="tableNumber">Table Number: </h2>
+			<h2 id="tableNumber">Table Number: <span id="tableDigit"></span></h2>
 			<div id="flexInputs">
 				<input type="text" placeholder="Name" />
 				<input type="text" placeholder="Phone Number" />
 				<input type="text" placeholder="Number In Party" />
-				<button>SAVE</button>
+				<button id="saveButton">SAVE</button>
 			</div>
 		</form>
 	</div>
