@@ -1,12 +1,15 @@
 $(document).ready(function(){
 
+	var table;
+
 	$(".tables").click(function() {
-		$(this).addClass("reserved");
-		$(this).removeClass("available");
+		table = $(this)
 	});
 
 	$(".tables").click(function() {
-		$("#hiddenForm").removeClass("hidden");
+		if (table.hasClass("available")) {
+			$("#hiddenForm").removeClass("hidden");
+		}
 	});
 
 	$(".tables").click(function() {
@@ -15,6 +18,8 @@ $(document).ready(function(){
 	});
 
 	$("#saveButton").click(function() {
+		$(table).addClass("reserved");
+		$(table).removeClass("available");
 		$("#hiddenForm").addClass("hidden");
 	});
 
