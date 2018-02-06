@@ -1,17 +1,25 @@
 $(document).ready(function(){
 
-	$(".circles").click(function() {
+	$(".tables").click(function() {
 		$(this).addClass("reserved");
 		$(this).removeClass("available");
 	});
 
-	$(".circles").click(function() {
+	$(".tables").click(function() {
 		$("#hiddenForm").removeClass("hidden");
 	});
 
-	$(".circles").click(function() {
+	$(".tables").click(function() {
 		var digit = $(this).text();
 		$("#tableDigit").text(digit);
-	})
+	});
+
+	$("#saveButton").click(function() {
+		$("#hiddenForm").addClass("hidden");
+	});
+
+	$("#quitButton").click(function() {
+		$("#hiddenForm").addClass("hidden");
+	});
 	
 });
