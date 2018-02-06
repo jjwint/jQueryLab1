@@ -6,8 +6,8 @@
 </head>
 <body>
 
-	<h1>Table Finder</h1>
-	<h2>Pick your table now</h2>
+	<h1 id="tableFinder" >Table Finder</h1>
+	<h2 id="pickTable">Pick your table now</h2>
 
 	<div id="container">
 		<div id="row1">
@@ -27,14 +27,18 @@
 		</div>
 	</div>
 
-	<form id="hiddenForm">
-		<h1 id="newReservation">New Reservation</h1>
-		<h2>Table Number: </h2>
-		<input type="text" />
-		<input type="text" />
-		<input type="text" />
-		<button>SAVE</button>
-	</form>
+	<div id="hiddenForm">
+		<form>
+			<h1 id="newReservation">New Reservation</h1>
+			<h2>Table Number: </h2>
+			<div id="flexInputs">
+				<input type="text" placeholder="Name" />
+				<input type="text" placeholder="Phone Number" />
+				<input type="text" placeholder="Party Number" />
+				<button>SAVE</button>
+			</div>
+		</form>
+	</div>
 
 	<script src="jQuery-3.3.1.js"></script>
 	<script src="script.js"></script>

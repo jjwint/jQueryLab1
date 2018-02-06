@@ -81,3 +81,21 @@ span {
 	display: flex;
 	flex-direction: row;
 }
+
+#hiddenForm {
+	background-color: white;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+#flexInputs {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
+
+
+
