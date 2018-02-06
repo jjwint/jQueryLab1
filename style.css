@@ -143,3 +143,30 @@ h2, span {
 	padding-top: 50px;
 }
 
+.notAllowed {
+	cursor: not-allowed;
+}
+
+.hoverClass {
+	background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
