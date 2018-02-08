@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
 	var table;
+	var nameInput = document.getElementById("name");
+	var userName = nameInput.value;
 
 	$(".tables").click(function() {
 		table = $(this);
@@ -26,6 +28,8 @@ $(document).ready(function(){
 		$(table).removeClass("available");
 		$(table).addClass("notAllowed");
 		$("#hiddenForm").addClass("hidden");
+		// $(table).append(userName);
+		// console.log(userName);
 	});
 
 	$("#quitButton").click(function() {
@@ -34,10 +38,10 @@ $(document).ready(function(){
 
 	$(".tables").hover(function() {
 		if (tableHover.hasClass("available")) {
-			$(tableHover).css("border", "2px dashed #E34E45");
+			$(tableHover).css("background-color", "#E34E45");
 		}
 	}, function() {
-		$(tableHover).css("border", "none");
+		$(tableHover).css("background-color", "");
 	});
 
 	$(".tables").hover(function() {
@@ -49,3 +53,28 @@ $(document).ready(function(){
 	});
 	
 });
+
+
+
+
+
+
+
+
+
+
+//TODO:
+	//change button to "submit" - add prevent default function
+	//step 1 of lab2 - get form inputs onto hover
+	//
+
+
+
+
+
+
+
+
+
+
+
